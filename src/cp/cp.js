@@ -24,6 +24,7 @@ const spawnChildProcess = async (args) => {
 
     child.on('close', (code) => {
         console.log('Child process closed with code ', code)
+        process.exit()
     })
 }
 
